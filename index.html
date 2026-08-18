@@ -3,61 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KEAR GAMES</title>
-<meta name="description" content="KEAR GAMES — Türkçe kelime ve zekâ oyunları.">
-<style>
-  /* Harici kaynak yuklenmez: yazi tipi, betik, izleyici yok. */
-  :root{ color-scheme: light dark; }
-  *{ box-sizing:border-box; }
-  body{
-    margin:0 auto; padding:64px 20px; max-width:720px;
-    font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color:#1b1b1b; background:#fff;
-  }
-  .marka{ font-size:14px; letter-spacing:3px; text-transform:uppercase; color:#7a6a2f; margin:0 0 10px; }
-  h1{ font-size:34px; line-height:1.2; margin:0 0 14px; }
-  .slogan{ font-size:18px; color:#555; margin:0 0 40px; }
-  h2{ font-size:20px; margin:40px 0 14px; }
-  .kart{
-    display:block; padding:20px; border:1px solid #ddd; border-radius:12px;
-    text-decoration:none; color:inherit; margin-bottom:14px;
-  }
-  .kart b{ display:block; font-size:18px; color:#1d4f91; margin-bottom:4px; }
-  .kart span{ font-size:14px; color:#666; }
-  .baglantilar a{ color:#1d4f91; }
-  footer{ margin-top:48px; padding-top:18px; border-top:1px solid #ddd; font-size:14px; color:#666; }
-  @media (prefers-color-scheme: dark){
-    body{ color:#e8e6e1; background:#15171a; }
-    .marka{ color:#c8b45f; } .slogan, .kart span, footer{ color:#9a9a9a; }
-    .kart{ border-color:#333; } .kart b, .baglantilar a{ color:#7fb0f0; }
-    footer{ border-top-color:#333; }
-  }
-</style>
+<title>KEAR GAMES — Türkçe kelime ve zekâ oyunları</title>
+<meta name="description" content="KEAR GAMES, klasik masa oyunlarını Türkçenin tadıyla buluşturan bağımsız bir oyun stüdyosudur.">
+<link rel="icon" href="gorseller/peron-ikon.png">
+<link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
-<p class="marka">KEAR GAMES</p>
-<h1>Türkçe kelime ve zekâ oyunları</h1>
-<p class="slogan">Klasik masa oyunlarını Türkçenin tadıyla buluşturuyoruz.</p>
+<header class="ust">
+  <div class="kap">
+    <a class="logo" href="/">KEAR GAMES</a>
+    <nav>
+      <a href="/peron/">PERON</a>
+      <a href="/gizlilik/">Gizlilik</a>
+      <a href="mailto:support@keargames.com">İletişim</a>
+    </nav>
+  </div>
+</header>
 
-<h2>Oyunlarımız</h2>
+<div class="kap">
 
-<a class="kart" href="gizlilik/peron/">
-  <b>PERON: Kelime Okey</b>
-  <span>Klasik okeyi harf taşlarıyla oyna, kelimeleri kur ve rakiplerini geç. Android · yakında</span>
-</a>
+  <div class="hero">
+    <img src="gorseller/kear-games.webp" alt="KEAR GAMES" width="1200" height="539">
+    <h1>Türkçe kelime ve zekâ oyunları</h1>
+    <p>Klasik masa oyunlarını Türkçenin tadıyla buluşturuyoruz. Reklamsız, çevrimdışı, sade.</p>
+  </div>
 
-<h2>İletişim</h2>
-<p class="baglantilar">
-  Soru, öneri ve destek için:
-  <a href="mailto:support@keargames.com">support@keargames.com</a>
-</p>
+  <section>
+    <h2>Oyunlarımız</h2>
+    <a class="oyun" href="/peron/">
+      <img src="gorseller/peron-ikon.png" alt="PERON: Kelime Okey simgesi" width="96" height="96">
+      <div class="bilgi">
+        <h3>PERON: Kelime Okey</h3>
+        <p>Klasik okeyi harf taşlarıyla oyna. Yerden çek, ıstakanı diz, Türkçe kelimeler kur
+           ve doğru zamanda elini aç. TİLKİ, ENİŞTE ve NURİYE masada seni bekliyor.</p>
+        <span class="rozet">Android · yakında</span>
+      </div>
+    </a>
+  </section>
+
+  <section>
+    <h2>İletişim</h2>
+    <p>Soru, öneri ve destek için:
+       <a href="mailto:support@keargames.com">support@keargames.com</a></p>
+  </section>
+
+</div>
 
 <footer>
-  <p>
+  <div class="kap">
     © KEAR GAMES ·
-    <a href="gizlilik/">Gizlilik politikaları</a>
-  </p>
+    <a href="/gizlilik/">Gizlilik politikaları</a> ·
+    <a href="mailto:support@keargames.com">support@keargames.com</a>
+  </div>
 </footer>
 
 </body>

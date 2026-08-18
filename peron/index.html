@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PERON: Kelime Okey — KEAR GAMES</title>
+<meta name="description" content="Klasik okeyi harf taşlarıyla oyna, Türkçe kelimeler kur ve rakiplerini geç. Reklamsız, çevrimdışı.">
+<link rel="icon" href="/gorseller/peron-ikon.png">
+<link rel="stylesheet" href="/stil.css">
+</head>
+<body>
+
+<header class="ust">
+  <div class="kap">
+    <a class="logo" href="/">KEAR GAMES</a>
+    <nav>
+      <a href="/peron/">PERON</a>
+      <a href="/gizlilik/peron/">Gizlilik</a>
+      <a href="mailto:support@keargames.com">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<div class="kap">
+
+  <div class="hero">
+    <img src="/gorseller/peron-tanitim.jpg" alt="PERON: Kelime Okey" width="1024" height="500">
+    <h1>PERON: Kelime Okey</h1>
+    <p>Klasik okeyi harf taşlarıyla oyna, kelimeleri kur ve rakiplerini geç.</p>
+    <p style="margin-top:14px"><span class="rozet">Android · yakında Google Play'de</span></p>
+  </div>
+
+  <section>
+    <h2>Oyun</h2>
+    <p>PERON: Kelime Okey, klasik okey masasını Türkçe kelimelerle birleştirir.</p>
+    <p style="margin-top:12px">Yerden taş çek, ıstakanı düzenle, anlamlı Türkçe kelimeler kur ve
+       doğru zamanda elini aç. Her elde 14 taşınla kelimeler oluştururken bir taşı bitiş taşı
+       olarak ayırırsın. Puan barajını geçip elini açan oyuncu o elin puanını alır; maç sonunda
+       en yüksek toplam puan kazanır.</p>
+    <p style="margin-top:12px; color:var(--altin)"><em>Her taş bir ihtimal, her kelime yeni bir hamle.</em></p>
+  </section>
+
+  <section>
+    <h2>Özellikler</h2>
+    <ul class="ozellikler">
+      <li>Türkçe harf taşlarıyla klasik okey akışı</li>
+      <li>TİLKİ, ENİŞTE ve NURİYE'ye karşı tek oyunculu masa</li>
+      <li>Kolay, Normal ve Zor seviyeleri</li>
+      <li>5, 10 veya 15 ellik maçlar</li>
+      <li>Geçerli kelime ve puan geri bildirimi</li>
+      <li>Yatay telefon ve tablet düzeni</li>
+      <li>Reklamsız, çevrimdışı oynanış</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ekran görüntüleri</h2>
+    <div class="galeri">
+      <img src="/gorseller/ekran-1.jpg" alt="Ana menü" loading="lazy" width="1280" height="720">
+      <img src="/gorseller/ekran-2.jpg" alt="Masada kelime kurulurken" loading="lazy" width="1280" height="720">
+      <img src="/gorseller/ekran-3.jpg" alt="El sonu ve puanlar" loading="lazy" width="1280" height="720">
+      <img src="/gorseller/ekran-4.jpg" alt="Maç sonu özeti" loading="lazy" width="1280" height="720">
+    </div>
+  </section>
+
+  <section>
+    <h2>Gizlilik</h2>
+    <p>PERON veri toplamaz: reklam, analiz ve hesap yoktur. Ayrıntılar için
+       <a href="/gizlilik/peron/">gizlilik politikası</a>.</p>
+  </section>
+
+</div>
+
+<div class="buyutec" id="buyutec"><img alt=""></div>
+
+<footer>
+  <div class="kap">
+    © KEAR GAMES ·
+    <a href="/">Ana sayfa</a> ·
+    <a href="/gizlilik/peron/">Gizlilik politikası</a> ·
+    <a href="mailto:support@keargames.com">support@keargames.com</a>
+  </div>
+</footer>
+
+<script>
+// Ekran goruntusune tiklayinca buyuk goster; tiklama veya ESC ile kapan.
+(function(){
+  var kutu=document.getElementById("buyutec"), buyuk=kutu.querySelector("img");
+  document.querySelectorAll(".galeri img").forEach(function(g){
+    g.addEventListener("click",function(){
+      buyuk.src=g.src; buyuk.alt=g.alt; kutu.classList.add("acik");
+    });
+  });
+  kutu.addEventListener("click",function(){ kutu.classList.remove("acik"); });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape") kutu.classList.remove("acik");
+  });
+})();
+</script>
+
+</body>
+</html>

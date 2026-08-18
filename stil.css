@@ -1,0 +1,78 @@
+/* KEAR GAMES — ortak stil. Harici kaynak yok. */
+:root{
+  --yesil:#0f4d33; --yesil-koyu:#0a3524; --altin:#d4af37;
+  --krem:#f3ede0; --metin:#e8e6e1; --soluk:#a9a49a; --kart:#12261d;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{
+  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:var(--metin); background:var(--yesil-koyu);
+  background-image:radial-gradient(ellipse at 50% -10%, #16624180 0%, transparent 60%);
+  min-height:100vh;
+}
+.kap{ max-width:960px; margin:0 auto; padding:0 20px; }
+a{ color:var(--altin); }
+
+/* ---- ust menu ---- */
+header.ust{ border-bottom:1px solid #ffffff14; padding:18px 0; }
+header.ust .kap{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.logo{ font-weight:800; letter-spacing:3px; font-size:14px; text-transform:uppercase;
+  color:var(--altin); text-decoration:none; }
+nav a{ color:var(--soluk); text-decoration:none; margin-left:20px; font-size:15px; }
+nav a:hover{ color:var(--altin); }
+
+/* ---- hero ---- */
+.hero{ padding:56px 0 40px; text-align:center; }
+.hero img{ width:100%; max-width:760px; height:auto; border-radius:16px;
+  box-shadow:0 18px 50px #0006; }
+.hero h1{ font-size:clamp(28px,5vw,42px); line-height:1.15; margin:28px 0 12px; }
+.hero p{ color:var(--soluk); font-size:18px; max-width:620px; margin:0 auto; }
+
+/* ---- bolum ---- */
+section{ padding:44px 0; }
+h2{ font-size:24px; margin-bottom:20px; padding-bottom:10px;
+  border-bottom:2px solid var(--altin); display:inline-block; }
+
+/* ---- oyun karti ---- */
+.oyun{ display:flex; gap:24px; align-items:center; flex-wrap:wrap;
+  background:var(--kart); border:1px solid #ffffff14; border-radius:16px;
+  padding:24px; text-decoration:none; color:inherit; transition:transform .15s, border-color .15s; }
+.oyun:hover{ transform:translateY(-3px); border-color:var(--altin); }
+.oyun img{ width:96px; height:96px; border-radius:20px; flex:0 0 auto; }
+.oyun .bilgi{ flex:1; min-width:220px; }
+.oyun h3{ font-size:22px; color:var(--altin); margin-bottom:6px; }
+.oyun p{ color:var(--soluk); font-size:15px; }
+.rozet{ display:inline-block; margin-top:10px; font-size:12px; letter-spacing:1px;
+  text-transform:uppercase; background:#ffffff12; border:1px solid #ffffff20;
+  padding:4px 10px; border-radius:999px; color:var(--metin); }
+
+/* ---- ozellik listesi ---- */
+.ozellikler{ list-style:none; display:grid; gap:12px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+.ozellikler li{ background:var(--kart); border:1px solid #ffffff12;
+  border-radius:12px; padding:14px 16px; font-size:15px; }
+.ozellikler li::before{ content:"◆ "; color:var(--altin); }
+
+/* ---- galeri ---- */
+.galeri{ display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); }
+.galeri img{ width:100%; height:auto; border-radius:12px; border:1px solid #ffffff14;
+  cursor:zoom-in; transition:transform .15s; display:block; }
+.galeri img:hover{ transform:scale(1.02); }
+
+/* ---- buyutec ---- */
+.buyutec{ position:fixed; inset:0; background:#000000e8; display:none;
+  align-items:center; justify-content:center; padding:20px; z-index:100; cursor:zoom-out; }
+.buyutec.acik{ display:flex; }
+.buyutec img{ max-width:100%; max-height:100%; border-radius:10px; }
+
+footer{ border-top:1px solid #ffffff14; padding:28px 0 48px; color:var(--soluk); font-size:14px; }
+footer a{ color:var(--soluk); }
+footer a:hover{ color:var(--altin); }
+
+@media (prefers-color-scheme: light){
+  body{ background:#faf7f0; background-image:none; color:#1b1b1b; }
+  :root{ --kart:#fff; --soluk:#5a5a5a; --metin:#1b1b1b; }
+  header.ust, footer{ border-color:#0000001a; }
+  .oyun, .ozellikler li{ border-color:#0000001a; box-shadow:0 2px 10px #0000000d; }
+  .logo{ color:#8a6d1f; } a{ color:#8a6d1f; }
+}
